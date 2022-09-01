@@ -23,8 +23,15 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
   background-color: var(--Ligthgray);
   font-family: var(--fontPrimary);
+  font-size: 15px;
+  font-weight: 400;
 }
 
 img {
@@ -50,7 +57,7 @@ img {
 
 .card-body h1 {
   color: var(--Darkblue);
-  font-size: 1.3rem;
+  font-size: 20px;
   padding: 0 0.5rem;
   line-height: 1.75rem;
   font-weight: 700;
@@ -58,15 +65,12 @@ img {
 
 .card-body p {
   color: var(--Grayishblue);
-  font-weight: 500;
   padding: 0.9rem 1rem;
-  font-size: 0.96rem;
   margin-bottom: 0.6rem;
 }
 
-@media screen and (min-width: 32.5em) {
+@media screen and (min-width: 375px) {
   body {
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
